@@ -16,6 +16,18 @@ class JumbleService {
         console.log(formData, correctJumble)
     }
 
+    startGame(task) {
+        const startTime = new Date();
+        task();
+        const endTime = new Date();
+        let elapsedSeconds = endTime - startTime;
+
+        console.log(elapsedSeconds);
+    }
+
+    endGame() {
+
+    }
 }
 
 

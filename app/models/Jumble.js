@@ -7,8 +7,8 @@ export class Jumble {
         this.body = data.body;
         // to best keep track of the fastest times you might want these properties too! They would start null cause no one has completed these yet.
         this.fastestTime = null;
-        this.startTime = null;
-        this.endTime = null;
+        this.startTime = new Date(data.startTime);
+        this.endTime = Date.now();
     }
 
     get ListTemplate() {
